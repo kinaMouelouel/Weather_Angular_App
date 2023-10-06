@@ -1,0 +1,163 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+:root {
+    --blue-1: #01bbe1;
+    --blue-2: #0681aa;
+    --yellow: #FAC742;
+    --black: #000;
+    --white: #FFF;
+    --grey: #EDEDED;
+    --shadow-light: rgba(0, 0, 0, 0.3);
+    --shadow-dark: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+fa-icon {
+    font-size: 48px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 400px;
+    height: 80vh;
+    background-color: var(--blue-1);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px var(--shadow-dark);
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+.upper-data {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.upper-data img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.weather-data {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shadow-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.more-info-label {
+    font-size: 1em;
+    text-align: left;
+    font-weight: 900;
+    margin: 8px;
+    color: var(--black);
+}
+
+.time {
+    color: var(--black);
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 16px;
+}
+
+.location {
+    color: var(--black);
+    text-align: center;
+    font-size: 1.6em;
+}
+
+
+
+.temperature {
+    color: var(--black);
+    font-size: 3em;
+    text-align: center;
+    font-weight: 900;
+}
+
+.more-info-container {
+    flex: 1;
+    background-color: var(--blue-1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-block {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.info-block-label {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-block-label span {
+    color: var(--black);
+    font-size: 0.8em;
+}
+
+.info-block-value {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--black);
+}
+
+.search {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.search input {
+    background-color: var(--shadow-dark);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 0.8em;
+    color: var(--black);
+    text-align: center;
+}
