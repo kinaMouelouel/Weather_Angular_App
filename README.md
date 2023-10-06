@@ -24,40 +24,43 @@ Follow these steps to run the Angular Weather App locally on your machine.
    git clone https://github.com/kinaMouelouel/Weather_Angular_App.git
    ```
 2. Navigate to the project directory: 
-cd angular-weather-app
-3.Install project dependencies
-npm install
+```cd angular-weather-app```
+3. Install project dependencies
+```npm install```
 ### Configuration
-1.Obtain an API key from a weather data service (e.g., OpenWeatherMap).
+1. Obtain an API key from a weather data service (e.g., OpenWeatherMap).
 
-2.Create a configuration file for your API key. In the project root directory, create a file named config.ts and add your API key:
+2. Create a configuration file for your API key. In the project root directory, create a file named config.ts and add your API key:
  
-```export const environment = {
+ ```bash
+ export const environment = {
   apiKey: 'YOUR_API_KEY_HERE',
   production: true,
 };
 ```
 
 ##Running the App
-1.Start the Angular development server:
-```ng serve```
+1. Start the Angular development server:
+ ```bash
+ ng serve
+ ```
 
-2.Open your web browser and navigate to http://localhost:4200/.
+2. Open your web browser and navigate to http://localhost:4200/.
 
-3.You should now see the Angular Weather App running locally on your machine.
+3. You should now see the Angular Weather App running locally on your machine.
 
 ## Usage
 
-1.Enter the name of the location you want to check the weather for in the search input field.
+1. Enter the name of the location you want to check the weather for in the search input field.
 
-2.Click the "Search" button or press Enter to retrieve weather information.
+2. Click the "Search" button or press Enter to retrieve weather information.
 
-3.The app will display temperature, visibility, and wind data for the selected location.
+3. The app will display temperature, visibility, and wind data for the selected location.
 
 ## API Integration
 The Angular Weather App integrates with a weather data service using an API key for real-time weather data retrieval. Be sure to replace YOUR_API_KEY_HERE in the config.ts file with your actual API key.
 
-##  Contributing
+## Contributing
 Contributions are welcome! If you have any suggestions or improvements for the Angular Weather App, feel free to open an issue or create a pull request.
 
  
